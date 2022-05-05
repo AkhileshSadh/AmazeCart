@@ -1,0 +1,128 @@
+/* header styles */
+
+.top {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+}
+.header {
+    display: block;
+    position: sticky ;
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0;
+    background-color: white;
+    color: blue;
+    box-shadow: 5px 5px 15px gray;
+  }
+  
+  .cartitem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 15px gray;
+  }
+  
+  .cartItemImg {
+    border-radius: 70%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  
+  .cartItemDetail {
+    display: flex;
+    flex: 1;
+    padding: 0 20px;
+    flex-direction: column;
+  }
+  
+  /* Home Page */
+  
+  .home {
+    display: flex;
+  }
+  
+  .filters {
+    background-color: #c1d5e9;
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 10px;
+    height: 86vh;
+    box-shadow: 3px 3px 15px gray;
+    position: fixed;
+  bottom: 0;
+  right: 0;
+  }
+  
+  .filters > span {
+    padding-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 25px;
+  }
+  
+  .productContainer {
+    display: flex;
+    position: relative;
+    top: 3em;
+    width: 78%;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .products {
+    width: 30%;
+    margin: 10px;
+    box-shadow: 2px 2px 15px gray;
+  }
+  
+  .summary {
+    width: 30%;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 771px) {
+
+    .header {
+      display: block;
+      text-align: center;
+      font-size: 30px;
+      margin: 10px 0;
+    }
+
+    .filters {
+      width: 30%;
+      padding: 10px;
+      margin: 5px;
+    }
+  
+    .filters > span {
+      font-size: 10px;
+    }
+  
+    .title {
+      font-size: 18px !important;
+    }
+  
+    .productContainer {
+      width: 58%;
+      padding: 0;
+    }
+  
+    .search {
+      display: none !important;
+    }
+  
+    .products {
+      width: 100%;
+    }
+  }

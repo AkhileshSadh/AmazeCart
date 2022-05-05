@@ -1,0 +1,21 @@
+a {
+    text-decoration: none !important;
+    color: blue !important;
+    font-weight: bolder;
+    padding: 5px;
+
+}
+
+  
+  /* Scroll bar */
+  body::-webkit-scrollbar {
+    width: 5px;
+  }
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(161, 117, 117);
+    outline: 1px solid rgb(112, 136, 160);
+  }
